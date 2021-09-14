@@ -1,0 +1,90 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    background: url("assets/sun-tornado.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    margin: 2rem 0;
+    z-index: 0;
+}
+
+.image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background: url("assets/Rayansailani.jpg");
+    background-size: contain;
+    object-fit: contain;
+}
+
+.link {
+    text-decoration: none;
+    background: #e09f3e;
+    color: white;
+    font-weight: 500;
+    padding: 1.2rem 0.8rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.link:hover {
+    opacity: 0.6;
+}
+
+.credits {
+    font-weight: 500;
+    margin: 8px;
+}
+
+.heart {
+    color: red;
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 600px) {
+    .link {
+        width: 75%;
+    }
+}
